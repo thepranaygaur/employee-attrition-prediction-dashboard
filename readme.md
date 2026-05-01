@@ -1,152 +1,138 @@
-````md
 # Employee Attrition Prediction & HR Analytics Dashboard
 
-## 📌 Project Overview
-This project focuses on predicting employee attrition using Machine Learning and analyzing workforce trends using an interactive Power BI dashboard.  
-
-The objective is to help HR teams identify employees at high risk of leaving and take proactive retention actions.
-
----
-
-## 🎯 Business Problem
-Employee attrition increases hiring cost, training cost, and productivity loss.  
-
-Using HR data, this project predicts attrition and uncovers the major factors influencing employee exits.
-
----
-
-## 📂 Dataset
-IBM HR Analytics Employee Attrition Dataset
-
-- Total Records: 1470 Employees  
-- Features: 35 Columns  
-- Target Variable: Attrition (Yes / No)
-
----
-
-## 🛠️ Tools & Technologies
-
-### Python
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-- Scikit-learn  
-
-### Power BI
-- Dashboard Creation  
-- KPI Cards  
-- Interactive Filters  
-
----
-
-## 📊 Project Workflow
-
-### 1. Data Preprocessing
-- Null value check  
-- Blank value check  
-- Constant column removal  
-- Target encoding  
-- One-hot encoding  
-
-### 2. Exploratory Data Analysis
-- Attrition by Department  
-- Attrition by Overtime  
-- Attrition by Job Role  
-- Attrition by Age Group  
-- Salary vs Attrition  
-
-### 3. Model Building
-Models used:
-
-- Logistic Regression  
-- Balanced Logistic Regression  
-- Random Forest Classifier  
-
-### 4. Model Evaluation
-Metrics used:
-
-- Accuracy  
-- Precision  
-- Recall  
-- F1 Score  
-- ROC AUC Score  
-
----
-
-## 🏆 Final Result
-
-Balanced Logistic Regression improved recall for attrition employees, making it more useful for HR retention use-cases.
-ROC AUC Score achieved good class separation performance.
-
----
-
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Dashboard Screenshot](dashboard_screenshot.png)
 
 ---
 
-## 📈 Key Business Insights
+## Project Overview
 
-- Employees doing overtime showed higher attrition rate  
-- Sales department had highest attrition rate  
-- Younger employees had higher attrition tendency  
-- Certain job roles had significantly higher attrition risk  
-- Lower salary groups were more likely to leave  
+This project predicts employee attrition using Machine Learning and analyzes workforce trends through an interactive Power BI dashboard.
+
+The goal is to help HR teams identify employees at risk of leaving and take proactive retention actions.
 
 ---
 
-## 📊 Power BI Dashboard Includes
+## Business Problem
 
-- Total Employees  
-- Attrition Count  
-- Attrition Rate %  
-- Average Age  
-- Average Salary  
-- Attrition by Department  
-- Attrition by Overtime  
-- Attrition by Job Role  
-- Attrition by Age Group  
+Employee attrition leads to hiring costs, training costs, and productivity loss.  
+Using HR data, this project identifies attrition patterns and predicts employee exits.
 
 ---
 
-## 📁 Project Files
+## Dataset
 
-- `HR_Attrition_Project.ipynb`
-- `HR_Attrition_Dashboard.pbix`
-- `dashboard_screenshot.png`
-- `hr_attrition_model.pkl`
-- `scaler.pkl`
+IBM HR Analytics Employee Attrition Dataset
+
+- Total Records: 1470
+- Features: 35 Columns
+- Target Variable: Attrition (Yes / No)
 
 ---
 
-## 🚀 How to Run
+## Tools & Technologies
+
+### Python
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+### Power BI
+
+- KPI Cards
+- Interactive Filters
+- Dashboard Visualizations
+
+---
+
+## Project Workflow
+
+### 1. Data Preprocessing
+
+- Null value check
+- Blank value check
+- Constant column removal
+- Target encoding
+- One-hot encoding
+- Feature scaling
+
+### 2. Exploratory Data Analysis
+
+- Attrition by Department
+- Attrition by Overtime
+- Attrition by Job Role
+- Attrition by Age Group
+- Salary vs Attrition
+
+### 3. Model Building
+
+Models used:
+
+- Logistic Regression
+- Balanced Logistic Regression
+- Random Forest Classifier
+
+### 4. Model Evaluation
+
+Metrics used:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC AUC Score
+
+---
+
+## Final Results
+
+- Balanced Logistic Regression improved recall for attrition employees.
+- ROC AUC score showed good class separation performance.
+- Power BI dashboard provided clear HR insights.
+
+---
+
+## Key Business Insights
+
+- Employees doing overtime had higher attrition rate.
+- Sales department showed highest attrition rate.
+- Younger employees had higher tendency to leave.
+- Some job roles had significantly higher attrition risk.
+- Lower salary groups were more likely to leave.
+
+---
+
+## Power BI Dashboard Includes
+
+- Employee Count
+- Attrition Count
+- Attrition Rate %
+- Average Age
+- Average Salary
+- Attrition by Department
+- Attrition by Overtime
+- Attrition by Job Role
+- Attrition by Age Group
+
+---
+
+## Project Files
+
+- HR_Attrition_Project.ipynb
+- HR_Attrition_Dashboard.pbix
+- dashboard_screenshot.png
+- hr_attrition_model.pkl
+- scaler.pkl
+
+---
+
+## How to Run
+
+Install required libraries:
 
 ```bash
 pip install -r requirements.txt
-````
-
-Open Jupyter Notebook and run:
-
-```bash
-HR_Attrition_Project.ipynb
-```
-
----
-
-## 📌 Future Improvements
-
-* Hyperparameter tuning
-* SMOTE for class imbalance
-* Streamlit deployment
-* Real-time HR monitoring dashboard
-
----
-
-## 👨‍💻 Author
-
-Pranay Gaur
-
-```
-```
